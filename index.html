@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Otavio Pierin</title>
+    <link rel="stylesheet" href="css/estilos.css>
+  <link href=<link href="
+        https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Megrim&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/056df7f08b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="linksinicio">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Portifólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h1 class="site-title">Otavio Pierin</h1>
+            <h2 class="site-subtitle">Aprendiz de front-end</h2>
+        </div>
+    </header>
+    <section class="portifolio">
+
+        <h2>Portfólio</h2>
+
+        <div class="grid icons">
+            <figure>
+                <img class="img-portfolio"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkSr1qnqp3L_7eE3lKPmVY27FBUi8dC7n7DSD04cjkDoVAiKqd&usqp=CAU"
+                    alt="Projetos pessoais">
+                <figcaption>Projetos pessoais</figcaption>
+                <img class="img-portfolio"
+                src="https://img.icons8.com/dotty/2x/education.png"
+                alt="Educação">
+            <figcaption>Educação</figcaption>
+            
+            </figure>
+        </div>
+
+    </section>
+    <section class="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/OtavioPierin">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/IamOtavi0">
+                <i class="fab fa-twitter"></i>
+                <a href="https://www.instagram.com/otavio_pierin/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+        </div>
+    </section>
+    <style>
+        /*ATENÇÃO AQUI  COMEÇA O CSS*/
+        /*soft reset do css*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+             background-size: aut720px 1080px;
+            height: 100vh;
+            font-family: 'Lucida Sans Unicode';
+            font-size: 14px;
+        }
+
+        /*se tiver pelo menos 400 pixels vai carregar esses estilos*/
+        @media(min-width: 400px; ) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        @media(min-width:1000px; ) {
+            body {
+                font-size: 24px;
+            }
+        }
+
+        header {
+            background-image: url("https://www.comunidademegadrive.com.br/wp-content/uploads/2017/11/fundo-site.png");
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .linksinicio {
+            background-color:violet;
+            position: fixed;
+            width: 100vw;
+            top: 5px;
+        }
+
+        .linksinicio a {
+            display: block;
+            padding: 10px 20px;
+            transition: background-color 1s, color 1s;
+        }
+
+        .linksinicio ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .linksinicio li {
+            list-style: none;
+        }
+
+        .linksinicio a:hover{
+            background-color: black;
+            color:white;
+        }
+
+        a {
+            color:black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+
+        .site-subtitle,
+        .site-title {
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        .site-title {
+            text-decoration: underline;
+            text-decoration-color: purple;
+            font-size: 4em;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 2em;
+
+
+        }
+
+        .site-subtitle {
+            text-decoration: underline;
+            text-decoration-color: purple;
+            font-size: 2em;
+            font-family: monospace;
+        }
+
+        .linksinicio {
+            margin: 20 px;
+            border-style: outset;
+            font-size: large;
+            font-weight: bold;
+            box-shadow: 10px 10px 15px 10px;
+            }
+
+        
+        .portifolio h2, .contato h2 {
+            color:black;
+            font-family: monospace;
+            font-size: 50px;
+            margin-bottom: 1.5em;
+            text-align: center;
+        }
+
+        .portifolio .grid{
+            display:grid;
+            gap: 1em;
+            /*grid-template-columns: 240px 240px 0px;*/
+        }
+
+        @media(min-width: 800px;) {
+            .portifolio .grid{
+align-items: center;
+justify-content: center;
+/*height: calc(100vh - 2em - 3cm); calcula como o grid vai ficar*/
+            }
+        }
+
+        .portifolio figure{
+            text-align:center;
+        }
+
+        .portifolio {
+            padding: 2em;
+            margin-bottom: 1.5em;
+        }
+
+        figcaption {
+            color:black;
+        }
+
+        .contato{
+            background-color: violet;
+            color:black;
+            
+        }
+
+        .img-portifolio {
+            height: 180px;
+            width: 180px;
+            border-radius: 20px;
+             }
+
+        .contato .icons{
+            text-align: center;
+        } 
+        
+        .contato a{
+           color:whitesmoke;
+           font-size: 7em;
+           transition: text-shadow 1s ;            
+        }
+
+        .contato a:active,
+        .contato a:hover{
+            text-decoration:none;
+            text-shadow:0px 0px 10px rgb(0, 9, 12);
+        }
+
+       
+         </style>
+</body>
+
+</html>
